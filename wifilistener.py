@@ -14,7 +14,7 @@ if __name__ == "__main__":
         ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
         sys.exit(0)
     
-    # Yönetici olarak çalışıyorsanız buraya kodunuzu ekleyin
+
     from scapy.all import sniff, IP
 
     def packet_handler(packet):
